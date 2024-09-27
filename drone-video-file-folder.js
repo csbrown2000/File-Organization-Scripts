@@ -16,7 +16,7 @@ function createDroneVideoFileFolder(folderName) {
 		console.log(`Changed working directory to: ${dirPath}`);
 	
 		// Create a folder for each camera - Mini 3 Pro, Avata 2
-		const drones = ["Mini 3 Pro", "Avata 2"];
+		const drones = ["[01] Mini 3 Pro", "[02] Avata 2"];
 		drones.forEach((drone) => {
 			const droneFolder = path.join(dirPath, drone);
 			fs.mkdirSync(droneFolder);
